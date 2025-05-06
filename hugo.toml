@@ -1,0 +1,4 @@
+baseURL = 'https://vgnc.ca/'
+languageCode = 'en-us'
+title = 'Video Game News Canada'
+theme = 'theme'
