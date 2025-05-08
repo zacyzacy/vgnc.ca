@@ -1,4 +1,4 @@
-baseURL = 'https://vgnc.ca/'
+baseURL = 'https://vgnc.ca'
 languageCode = 'en-us'
 title = 'Video Games News Canada'
 theme = 'theme'
