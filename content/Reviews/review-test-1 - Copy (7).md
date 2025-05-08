@@ -1,7 +1,9 @@
 +++
 date = '2025-05-07T12:31:02-04:00'
 title = 'Review Test 1'
-author = 'Name'
+desc = ''
+author = ''
+image = ''
 +++
 
 ### Review Test 1

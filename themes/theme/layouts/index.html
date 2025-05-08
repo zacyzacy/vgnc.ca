@@ -1,10 +1,12 @@
 {{ define "main" }}
 <main>
-	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-	{{ range $paginator.Pages }}
-	{{ .Render "summary" }}
-	{{ end }}
-	{{ partial "pagination.html" . }}
+	<div>
+		<div>
+			<h3>Latest Aritcles</h3>
+			{{ range first 10 .Site.RegularPages.ByPublishDate.Reverse }}
+			{{ .Render "summary" }}
+			{{ end }}
+		</div>
+	</div>
 </main>
-{{ partial "sidebar.html" . }}
 {{ end }}

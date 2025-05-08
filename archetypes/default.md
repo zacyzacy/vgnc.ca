@@ -1,7 +1,9 @@
 +++
 date = '{{ .Date }}'
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-author = 'Name'
+desc = ''
+author = ''
+image = ''
 +++
 
 ### {{ replace .File.ContentBaseName "-" " " | title }}
