@@ -5,5 +5,3 @@ desc = ''
 author = ''
 image = ''
 +++
-
-### {{ replace .File.ContentBaseName "-" " " | title }}

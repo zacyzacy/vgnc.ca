@@ -1,10 +1,10 @@
 <footer>
-	<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
 	{{ with .Site.Menus.footer }}
-	<nav> |
+	<nav class="footer-nav"> |
 		{{ range . }}
 		<a href="{{ .URL | relURL }}">{{ .Name }}</a> |
 		{{ end }}
 	</nav>
 	{{ end }}
+	<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
 </footer>
