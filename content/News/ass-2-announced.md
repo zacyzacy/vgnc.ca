@@ -6,6 +6,6 @@ author = 'no'
 image = ''
 +++
 
-### Ass 2 Announced
+##### {{< param "desc" >}}
 
 yep
