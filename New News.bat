@@ -1,5 +1,4 @@
 @echo off
-echo (Requires Hugo and Notepad++)
 set /p input= Name of News Piece:
 set name=%input: =-%
 hugo new content "content/News/%name%.md"
