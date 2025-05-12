@@ -2,7 +2,7 @@
 	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 	<nav>
 		<ul>
-			{{ range .Site.Sections }}
+			{{ range .Site.Sections.ByTitle }}
 			<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
 			{{ end }}
 		</ul>
