@@ -1,7 +1,7 @@
 +++
-date = '{{ .Date }}'
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-desc = ''
+date = '2025-05-11T21:20:58-04:00'
+title = 'Good Job'
+desc = 'bad job'
 author = ''
 image = 'https://vgnc.ca/logo.png'
 +++
@@ -10,3 +10,4 @@ image = 'https://vgnc.ca/logo.png'
 
 ##### {{< param "desc" >}}
 
+fuck you 
