@@ -1,12 +1,10 @@
 +++
 date = '{{ .Date }}'
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-desc = ''
-author = ''
+desc = 'decsription'
+author = 'vgnc'
 image = 'https://vgnc.ca/logo.png'
+rating = ''
 +++
 
-<img src="{{< param "image" >}}" alt="{{< param "desc" >}}" width="500" height="600">
-
-##### {{< param "desc" >}}
-
+Article here

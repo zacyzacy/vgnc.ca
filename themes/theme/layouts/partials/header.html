@@ -1,7 +1,9 @@
 <header>
-	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-	<nav>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7817206933612417"
+		crossorigin="anonymous"></script>
+	<nav class="nav">
 		<ul>
+			<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 			{{ range .Site.Sections.ByTitle }}
 			<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
 			{{ end }}
