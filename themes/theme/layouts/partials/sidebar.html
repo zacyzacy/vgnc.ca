@@ -6,7 +6,10 @@
 		<div>
 			<ul>
 				{{ range first 5 .Site.RegularPages.ByPublishDate.Reverse }}
-				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+				<li class="side-article">
+					<img class="side-img" src="{{ .Params.image }}">
+					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+				</li>
 				{{ end }}
 			</ul>
 		</div>

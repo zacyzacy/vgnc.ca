@@ -21,12 +21,17 @@ img {
     border-radius: 25px;
 }
 
+article {
+    padding: 30px;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-image: url("bg.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
+        overflow-x: hidden;
     }
 
     a:link {
@@ -61,8 +66,28 @@ img {
     .header-img {
         height: 400px;
         width: 100%;
-        border-radius: 8px;
         object-fit: cover;
+    }
+
+    .sum-img {
+        max-width: 200px;
+        height: 200px;
+        float: left;
+        display: inline;
+        object-fit: cover;
+    }
+
+    .side-img {
+        max-width: 50px;
+        height: 50px;
+        float: left;
+        display: inline;
+        object-fit: cover;
+    }
+
+    .side-article {
+        list-style: none;
+        padding: 20px;
     }
 
     .nav {
