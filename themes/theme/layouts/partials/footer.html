@@ -1,6 +1,5 @@
 <footer>
-	{{ with .Site.Menus.footer }}
-	<nav class="footer-nav"> |
+	{{ with .Site.Menus.footer }}|
 		{{ range . }}
 		<a href="{{ .URL | relURL }}">{{ .Name }}</a> |
 		{{ end }}

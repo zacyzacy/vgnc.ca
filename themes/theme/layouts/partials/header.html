@@ -1,8 +1,9 @@
 <header>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7817206933612417"
 		crossorigin="anonymous"></script>
-	<nav class="nav">
+	<nav>
 		<ul>
+			<img class="logo" src="/logo.png" alt="vgnc">
 			<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 			{{ range .Site.Sections.ByTitle }}
 			<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>

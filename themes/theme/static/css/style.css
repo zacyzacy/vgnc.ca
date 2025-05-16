@@ -1,5 +1,5 @@
 body {
-    font: 18px/1.5 Roboto;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 main,
@@ -8,6 +8,8 @@ aside {
     margin: 40px auto;
     padding: 10px;
     border-radius: 25px;
+    background-color: #ffffff;
+    padding-bottom: 100px;
 }
 
 h1,
@@ -25,6 +27,30 @@ article {
     padding: 30px;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding-left: 1rem;
+}
+
+.logo {
+    max-height: 100px;
+    max-width: 100px;
+    float: left;
+    display: inline;
+}
+
+
 @media (prefers-color-scheme: dark) {
     body {
         background-image: url("bg.png");
@@ -40,23 +66,6 @@ article {
 
     a:visited {
         color: #8e96f0;
-    }
-
-    main {
-        background-color: #ffffff;
-        padding-bottom: 100px;
-    }
-
-    aside {
-        background-color: #ffffff;
-    }
-
-    footer {
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-        color: #c9d1d9;
-        background-size: 100%;
     }
 
     .post_time {
@@ -90,18 +99,34 @@ article {
         padding: 20px;
     }
 
-    .nav {
+    nav {
         padding-left: 25%;
         width: 100%;
         text-align: left;
     }
 
-    .nav li {
+    nav li {
         display: inline;
     }
 
-    .nav a {
+    nav a {
         display: inline-block;
         padding: 10px;
     }
+
+    @media only screen and (max-width: 600px) {
+        nav {
+            flex-direction: column;
+        }
+
+        nav ul {
+            flex-direction: column;
+            padding-top: 0.5rem;
+        }
+
+        nav li {
+            padding: 0.5rem 0;
+        }
+    }
+
 }
