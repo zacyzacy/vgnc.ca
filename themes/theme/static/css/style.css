@@ -30,7 +30,6 @@ article {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
     background: white;
 }
 
@@ -100,7 +99,6 @@ nav li {
     }
 
     nav {
-        padding-left: 25%;
         width: 100%;
         text-align: left;
     }
