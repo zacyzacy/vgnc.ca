@@ -1,7 +1,7 @@
 +++
 date = '2025-02-12T03:11:20-04:00'
 title = 'Retro Review: Metal Gear Solid 2: Sons of the Patriots'
-desc = 'Perfect'
+desc = 'Always relevant'
 author = 'Zac Youngdale'
 image = 'https://images.igdb.com/igdb/image/upload/t_cover_big/co5e1c.jpg'
 rating = '5'

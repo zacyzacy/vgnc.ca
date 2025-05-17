@@ -1,7 +1,7 @@
 +++
 date = '2025-02-11T03:11:20-04:00'
 title = 'Review: Metroid Dread'
-desc = 'Perfect'
+desc = 'Full steam ahead'
 author = 'Zac Youngdale'
 image = 'https://images.igdb.com/igdb/image/upload/t_cover_big/co39zx.jpg'
 rating = '5'
