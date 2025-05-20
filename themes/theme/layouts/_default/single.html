@@ -4,7 +4,7 @@
 		<h1>{{ .Title }}</h1>
 		{{ if isset .Params "date" }}
 		<p class="post_time">Posted At:
-			<time datetime="{{ .Date.Format " 2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
+			<time datetime="{{ .Date.Format " Jan 02, 2006 3:04 PM" }}">{{ .Date.Format "Jan 02, 2006 3:04 PM" }}</time>
 		</p> {{ end }}
 		{{ if isset .Params "image" }}
 		<img class="header-img" src="{{ .Params.image }}" alt="{{ .Params.desc }}">
@@ -18,6 +18,12 @@
 		<div>
 			{{ .Content }}
 		</div>
+		{{ if isset .Params "date" }}
+		<a target="_blank" title="Share on Bluesky"
+			href="https://bsky.app/intent/compose?text={{ .Site.Title }}: {{ .Title }} {{ .Page.Permalink }}">
+			Share on Bluesky
+		</a>
+		{{ end }}
 	</article>
 </main>
 {{ partial "sidebar.html" . }}

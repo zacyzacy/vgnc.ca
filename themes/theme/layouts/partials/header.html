@@ -3,8 +3,7 @@
 		crossorigin="anonymous"></script>
 	<nav>
 		<ul>
-			<img class="logo" src="/logo.png" alt="vgnc">
-			<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+			<a href="{{ .Site.BaseURL }}"><img class="logo" src="/logo.png" alt="vgnc">{{ .Site.Title }}</a>
 			{{ range .Site.Sections.ByTitle }}
 			<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
 			{{ end }}
